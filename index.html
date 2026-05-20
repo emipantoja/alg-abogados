@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alg y Abogados | Firma Legal e Inmobiliaria</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">ALG & ABOGADOS</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#especialidades">Derecho</a>
+            <a href="#inmobiliaria">Inmobiliaria</a>
+            <a href="#experiencia">Trayectoria</a>
+            <a href="#faq">Preguntas</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <img src="logo.png" class="watermark" alt="">
+        <div class="hero-content">
+            <h1>Expertos en <span>Derecho</span> & Gestión <span>Inmobiliaria</span></h1>
+            <p style="font-size: 1.5rem; color: var(--text-gray); margin-bottom: 40px;">Soluciones jurídicas integrales con un enfoque en resultados y protección patrimonial.</p>
+            
+            <div style="display: flex; gap: 20px;">
+                <a href="https://wa.me/521XXXXXXXXXX" class="btn-wa">
+                    <i class="fa-brands fa-whatsapp"></i> ASESORÍA INMEDIATA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="especialidades">
+        <div class="title-group">
+            <h2>Especialidades Jurídicas</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="spec-item">
+            <i class="fa-solid fa-gavel" style="font-size: 5rem; color: var(--gold);"></i>
+            <div class="spec-info">
+                <h3>Derecho Penal</h3>
+                <p>Nuestra firma ofrece una defense técnica rigurosa en delitos de cuello blanco, delitos patrimoniales y representación integral en el Sistema Penal Acusatorio. Nos enfocamos en la protección de la libertad y el debido proceso, con estrategias basadas en análisis forense y dogmática penal avanzada.</p>
+                <button class="btn-req" onclick="toggle('penal')">Requerimientos del Caso</button>
+                <div id="penal" class="req-box">
+                    <ul>
+                        <li>• Identificación oficial vigente.</li>
+                        <li>• Copia de la Carpeta de Investigación o Número de causa penal.</li>
+                        <li>• Narrativa cronológica de los hechos firmada.</li>
+                        <li>• Evidencia documental o digital inicial.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="spec-item">
+            <i class="fa-solid fa-person-breastfeeding" style="font-size: 5rem; color: var(--gold);"></i>
+            <div class="spec-info">
+                <h3>Derecho Familiar</h3>
+                <p>Abordamos conflictos de alta sensibilidad como divorcios contenciosos, juicios de alimentos, guarda y custodia, y procesos sucesorios. Priorizamos el interés superior del menor y la estabilidad patrimonial de la familia mediante mediación estratégica o litigio agresivo según sea necesario.</p>
+                <button class="btn-req" onclick="toggle('fam')">Requerimientos del Caso</button>
+                <div id="fam" class="req-box">
+                    <ul>
+                        <li>• Actas de Nacimiento y Matrimonio (originales).</li>
+                        <li>• Comprobantes de ingresos y egresos.</li>
+                        <li>• Listado detallado de bienes gananciales.</li>
+                        <li>• Domicilios para notificaciones.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="spec-item">
+            <i class="fa-solid fa-scale-unbalanced" style="font-size: 5rem; color: var(--gold);"></i>
+            <div class="spec-info">
+                <h3>Derecho Civil</h3>
+                <p>Protección en controversias contractuales, responsabilidad civil objetiva, juicios hipotecarios y recuperación de cartera. Garantizamos la validez jurídica de sus acuerdos y la recuperación de sus activos mediante procesos judiciales eficientes.</p>
+                <button class="btn-req" onclick="toggle('civil')">Requerimientos del Caso</button>
+                <div id="civil" class="req-box">
+                    <ul>
+                        <li>• Contratos originales objeto de la disputa.</li>
+                        <li>• Escrituras públicas o títulos de propiedad.</li>
+                        <li>• Notificaciones o requerimientos previos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inmobiliaria" class="inmo-section">
+        <div class="inmo-grid">
+            <div>
+                <h2 style="font-size: 3.5rem; margin-bottom: 20px;">División <br>Inmobiliaria</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 30px;">Ofrecemos una gestión integral que combina la experiencia comercial con la seguridad jurídica absoluta. No solo movemos inmuebles, protegemos inversiones.</p>
+                
+                <ul class="inmo-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Venta:</strong> Estrategia de marketing premium y filtrado de prospectos.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Renta:</strong> Investigación profunda de inquilinos y pólizas jurídicas.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Administración de Condominios:</strong> Transparencia financiera y mantenimiento preventivo.</li>
+                </ul>
+
+                <div style="display: flex; gap: 15px; margin-bottom: 30px;">
+                    <a href="#" class="social-hero" style="color: var(--navy-deep); font-size: 1.5rem;"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-hero" style="color: var(--navy-deep); font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <a href="https://tu-web-inmobiliaria.com" class="btn-ext" style="border-color: var(--navy-deep); color: var(--navy-deep);">EXPLORAR CATÁLOGO DE PROPIEDADES</a>
+                
+                <a href="https://wa.me/521XXXXXXXXXX" class="btn-wa" style="margin-left: 10px;">
+                    <i class="fa-brands fa-whatsapp"></i> CONTACTO INMOBILIARIO
+                </a>
+            </div>
+            <div class="inmo-images">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80" alt="Casa Lujo">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" alt="Edificio">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80" alt="Interior">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" alt="Residencia">
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="exp-grid">
+            <div>
+                <h2 style="font-size: 3rem; margin-bottom: 30px;">Trayectoria Profesional</h2>
+                <p>Nuestra firma es liderada por un profesional con doble perfil en Contaduría y Derecho, lo que permite una visión 360° de los casos. Contamos con una sólida presencia en tribunales de la CDMX y Estado de México, habiendo servido como consultores externos para diversas cámaras de comercio.</p>
+                
+                <div class="bar-chart">
+                    <div class="bar-item">
+                        <div class="bar-label"><span>Casos Ganados</span><span>95%</span></div>
+                        <div class="bar-outer"><div class="bar-inner" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label"><span>Eficacia en Mediación</span><span>88%</span></div>
+                        <div class="bar-outer"><div class="bar-inner" style="width: 88%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label"><span>Retención de Clientes</span><span>100%</span></div>
+                        <div class="bar-outer"><div class="bar-inner" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">15+</span>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">800+</span>
+                    <p>Clientes Asesorados</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">300+</span>
+                    <p>Inmuebles Gestionados</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">12</span>
+                    <p>Especialistas Aliados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" style="background: var(--navy-light);">
+        <div class="title-group">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-q">¿Cómo garantizan la seguridad de mi renta? <i class="fa-solid fa-plus"></i></div>
+                <div class="faq-a">Implementamos un proceso de "Due Diligence" que incluye investigación en buró de crédito, antecedentes penales, verificación de propiedad en garantía y póliza jurídica de cumplimiento total.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">¿Qué costo tiene la primera consulta legal? <i class="fa-solid fa-plus"></i></div>
+                <div class="faq-a">Realizamos una breve evaluación inicial vía WhatsApp sin costo para determinar la viabilidad de su caso. Las consultas presenciales de análisis documental tienen una cuota fija que se bonifica si decide contratar el servicio.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">¿Administran condominios fuera de la zona metropolitana? <i class="fa-solid fa-plus"></i></div>
+                <div class="faq-a">Actualmente nuestra cobertura de administración física se concentra en CDMX y área metropolitana para garantizar la supervisión personal, pero ofrecemos consultoría administrativa remota a nivel nacional.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">¿Cuánto tiempo toma un juicio de desalojo por falta de pago? <i class="fa-solid fa-plus"></i></div>
+                <div class="faq-a">Gracias a las reformas recientes y nuestras cláusulas especializadas en contratos, podemos agilizar estos procesos en un tiempo promedio de 4 a 7 meses, dependiendo del juzgado.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">¿Qué documentos necesito para vender mi casa con ustedes? <i class="fa-solid fa-plus"></i></div>
+                <div class="faq-a">Requerimos copia de escrituras con sello del Registro Público, identificación de los propietarios, boletas de predial y agua de los últimos 5 años, y acta de matrimonio si aplica.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-footer">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p style="font-weight: 700; letter-spacing: 2px;">ALG & ABOGADOS</p>
+        <p style="color: var(--text-gray); margin-top: 10px;">Excelencia Legal | Gestión Inmobiliaria | Administración Patrimonial</p>
+        <p style="font-size: 0.8rem; margin-top: 40px; opacity: 0.5;">© 2026 Todos los derechos reservados. Diseñado para Alg y Abogados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
