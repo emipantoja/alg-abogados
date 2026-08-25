@@ -12,3 +12,31 @@ document.querySelectorAll('.faq-q').forEach(q => {
         icon.classList.toggle('fa-minus');
     });
 });
+
+// --- FUNCIONALIDAD DEL MENÚ MÓVIL ---
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+const menuIcon = mobileMenuBtn.querySelector('i');
+
+mobileMenuBtn.addEventListener('click', () => {
+    // Alterna la clase 'active' para abrir/cerrar el menú
+    navLinks.classList.toggle('active');
+    
+    // Cambia el icono de hamburguesa a una "X"
+    if (navLinks.classList.contains('active')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+    } else {
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+    }
+});
+
+// Cerrar el menú automáticamente al hacer clic en un enlace
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+    });
+});
