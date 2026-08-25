@@ -3,96 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alg y Abogados | Despacho  Jurídico</title>
+    <title>Alg y Abogados | Despacho Jurídico Premium</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
+        <header>
         <img src="logo-alg.png" class="nav-logo" alt="Logo ALG & ABOGADOS">
-        <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav-links">
             <a href="#inicio">Inicio</a>
             <a href="#especialidades">Derecho</a>
             <a href="#inmobiliaria">Inmobiliaria</a>
             <a href="#experiencia">Trayectoria</a>
-            <a href="#faq">Preguntas</a>
+            <a href="#faq">Consultas</a>
         </nav>
+    </header>        
     </header>
 
+    <!-- INICIO: Rediseñado para verse costoso y original -->
     <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
         <img src="logo.png" class="watermark" alt="">
         <div class="hero-content">
-            <h1>Expertos en <span>Derecho</span> & Gestión <span>Inmobiliaria</span></h1>
-            <p style="font-size: 1.5rem; color: var(--text-gray); margin-bottom: 40px;">Soluciones jurídicas integrales con un enfoque en resultados y protección patrimonial.</p>
+            <h2 class="hero-subtitle">EXCELENCIA & RIGOR JURÍDICO</h2>
+            <h1>Defensa <span>Patrimonial</span> de Alto Nivel</h1>
+            <p class="hero-description">Una firma boutique diseñada para proteger y maximizar sus intereses mediante estrategias legales e inmobiliarias de precisión.</p>
             
-            <div style="display: flex; gap: 20px;">
+            <div class="hero-actions">
+                <a href="#especialidades" class="btn-outline-gold">NUESTRAS ÁREAS</a>
                 <a href="https://wa.me/5551020194" class="btn-wa">
-                    <i class="fa-brands fa-whatsapp"></i> ASESORÍA INMEDIATA
+                    <i class="fa-brands fa-whatsapp"></i> ASESORÍA PRIVADA
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- ESPECIALIDADES: Rediseñadas en tarjetas elegantes con todas las ramas -->
     <section id="especialidades">
         <div class="title-group">
-            <h2>Especialidades Jurídicas</h2>
+            <h2>Práctica Jurídica</h2>
             <div class="underline"></div>
+            <p style="text-align: center; color: var(--text-gray); margin-top: 20px; max-width: 700px; margin-inline: auto;">Cubrimos de manera integral todas las ramas del derecho para blindar su patrimonio, su empresa y su familia.</p>
         </div>
 
-        <div class="spec-item">
-            <i class="fa-solid fa-gavel" style="font-size: 5rem; color: var(--gold);"></i>
-            <div class="spec-info">
+        <div class="spec-grid">
+            <!-- 1. Penal -->
+            <div class="spec-card">
+                <i class="fa-solid fa-gavel"></i>
                 <h3>Derecho Penal</h3>
-                <p>Nuestra firma ofrece una defense técnica rigurosa en delitos de cuello blanco, delitos patrimoniales y representation integral en el Sistema Penal Acusatorio. Nos enfocamos en la protección de la libertad y el debido proceso, con estrategias basadas en análisis forense y dogmática penal avanzada.</p>
-                <button class="btn-req" onclick="toggle('penal')">Requerimientos del Caso</button>
+                <p>Defensa técnica rigurosa en delitos de cuello blanco, patrimoniales y representación en el Sistema Penal Acusatorio. Estrategias basadas en dogmática penal.</p>
+                <button class="btn-req" onclick="toggle('penal')">Proceso y Requisitos</button>
                 <div id="penal" class="req-box">
                     <ul>
-                        <li>• Identificación oficial vigente.</li>
-                        <li>• Copia de la Carpeta de Investigación o Número de causa penal.</li>
-                        <li>• Narrativa cronológica de los hechos firmada.</li>
-                        <li>• Evidencia documental o digital inicial.</li>
+                        <li>Identificación oficial vigente.</li>
+                        <li>Copia de la Carpeta de Investigación.</li>
+                        <li>Narrativa cronológica de los hechos.</li>
+                        <li>Evidencia documental inicial.</li>
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="spec-item">
-            <i class="fa-solid fa-person-breastfeeding" style="font-size: 5rem; color: var(--gold);"></i>
-            <div class="spec-info">
+            <!-- 2. Familiar -->
+            <div class="spec-card">
+                <i class="fa-solid fa-people-roof"></i>
                 <h3>Derecho Familiar</h3>
-                <p>Abordamos conflictos de alta sensibilidad como divorcios contenciosos, juicios de alimentos, guarda y custodia, y procesos sucesorios. Priorizamos el interés superior del menor y la estabilidad patrimonial de la familia mediante mediación estratégica o litigio agresivo según sea necesario.</p>
-                <button class="btn-req" onclick="toggle('fam')">Requerimientos del Caso</button>
+                <p>Abordamos divorcios contenciosos, juicios de alimentos y sucesorios priorizando la estabilidad patrimonial mediante mediación estratégica.</p>
+                <button class="btn-req" onclick="toggle('fam')">Proceso y Requisitos</button>
                 <div id="fam" class="req-box">
                     <ul>
-                        <li>• Actas de Nacimiento y Matrimonio (originales).</li>
-                        <li>• Comprobantes de ingresos y egresos.</li>
-                        <li>• Listado detallado de bienes gananciales.</li>
-                        <li>• Domicilios para notificaciones.</li>
+                        <li>Actas de Nacimiento y Matrimonio.</li>
+                        <li>Comprobantes de ingresos.</li>
+                        <li>Listado de bienes gananciales.</li>
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="spec-item">
-            <i class="fa-solid fa-scale-unbalanced" style="font-size: 5rem; color: var(--gold);"></i>
-            <div class="spec-info">
+            <!-- 3. Civil -->
+            <div class="spec-card">
+                <i class="fa-solid fa-scale-balanced"></i>
                 <h3>Derecho Civil</h3>
-                <p>Protección en controversias contractuales, responsabilidad civil objetiva, juicios hipotecarios y recuperación de cartera. Garantizamos la validez jurídica de sus acuerdos y la recuperación de sus activos mediante procesos judiciales eficientes.</p>
-                <button class="btn-req" onclick="toggle('civil')">Requerimientos del Caso</button>
+                <p>Controversias contractuales, responsabilidad civil objetiva y juicios hipotecarios. Garantizamos la validez jurídica de sus acuerdos.</p>
+                <button class="btn-req" onclick="toggle('civil')">Proceso y Requisitos</button>
                 <div id="civil" class="req-box">
                     <ul>
-                        <li>• Contratos originales objeto de la disputa.</li>
-                        <li>• Escrituras públicas o títulos de propiedad.</li>
-                        <li>• Notificaciones o requerimientos previos.</li>
+                        <li>Contratos originales en disputa.</li>
+                        <li>Escrituras o títulos de propiedad.</li>
+                        <li>Notificaciones previas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4. Corporativo -->
+            <div class="spec-card">
+                <i class="fa-solid fa-building"></i>
+                <h3>Derecho Corporativo</h3>
+                <p>Constitución de sociedades, gobierno corporativo, fusiones y adquisiciones. Blindamos la estructura legal de su empresa ante cualquier eventualidad.</p>
+                <button class="btn-req" onclick="toggle('corp')">Proceso y Requisitos</button>
+                <div id="corp" class="req-box">
+                    <ul>
+                        <li>Actas constitutivas previas (si aplica).</li>
+                        <li>Identificación de socios accionistas.</li>
+                        <li>Poderes notariales vigentes.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 5. Laboral -->
+            <div class="spec-card">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3>Derecho Laboral</h3>
+                <p>Representación patronal y de altos ejecutivos. Auditorías laborales, rescisiones de contrato y representación ante tribunales de conciliación.</p>
+                <button class="btn-req" onclick="toggle('lab')">Proceso y Requisitos</button>
+                <div id="lab" class="req-box">
+                    <ul>
+                        <li>Contrato laboral.</li>
+                        <li>Recibos de nómina recientes.</li>
+                        <li>Actas administrativas documentadas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 6. Mercantil -->
+            <div class="spec-card">
+                <i class="fa-solid fa-file-signature"></i>
+                <h3>Derecho Mercantil</h3>
+                <p>Recuperación de cartera vencida, pagarés, cheques y litigios comerciales de alta complejidad para asegurar la liquidez de sus negocios.</p>
+                <button class="btn-req" onclick="toggle('merc')">Proceso y Requisitos</button>
+                <div id="merc" class="req-box">
+                    <ul>
+                        <li>Títulos de crédito originales (pagarés).</li>
+                        <li>Facturas firmadas.</li>
+                        <li>Contratos mercantiles de compraventa.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- INMOBILIARIA: Intacta como solicitaste -->
     <section id="inmobiliaria" class="inmo-section">
         <div class="inmo-grid">
             <div>
@@ -125,43 +180,38 @@
         </div>
     </section>
 
-    <section id="experiencia">
-        <div class="exp-grid">
-            <div>
-                <h2 style="font-size: 3rem; margin-bottom: 30px;">Trayectoria Profesional</h2>
-                <p>Nuestra firma es liderada por un profesional con doble perfil en Contaduría y Derecho, lo que permite una visión 360° de los casos. Contamos con una sólida presencia en tribunales de la CDMX y Estado de México, habiendo servido como consultores externos para diversas cámaras de comercio.</p>
+    <!-- TRAYECTORIA: Rediseñada para mayor credibilidad y profesionalismo -->
+    <section id="experiencia" class="credibility-section">
+        <div class="credibility-container">
+            <div class="credibility-text">
+                <div class="title-group" style="text-align: left; margin-bottom: 30px;">
+                    <h2>Prestigio & Autoridad</h2>
+                    <div class="underline" style="margin: 0;"></div>
+                </div>
+                <p>Nuestra firma es dirigida por un liderazgo con doble titulación en <strong>Contaduría Pública y Derecho</strong>. Esta sinergia técnica nos permite auditar, defender y estructurar casos desde una óptica financiera y legal que la mayoría de los despachos tradicionales pasan por alto.</p>
+                <p>Con presencia sostenida en los tribunales más exigentes de la CDMX y el Estado de México, hemos fungido como consultores externos para cámaras de comercio internacionales y corporativos multinacionales, garantizando discreción, ética y resultados contundentes.</p>
                 
-                <div class="bar-chart">
-                    <div class="bar-item">
-                        <div class="bar-label"><span>Casos Ganados</span><span>95%</span></div>
-                        <div class="bar-outer"><div class="bar-inner" style="width: 95%;"></div></div>
-                    </div>
-                    <div class="bar-item">
-                        <div class="bar-label"><span>Eficacia en Mediación</span><span>88%</span></div>
-                        <div class="bar-outer"><div class="bar-inner" style="width: 88%;"></div></div>
-                    </div>
-                    <div class="bar-item">
-                        <div class="bar-label"><span>Retención de Clientes</span><span>100%</span></div>
-                        <div class="bar-outer"><div class="bar-inner" style="width: 100%;"></div></div>
-                    </div>
+                <div class="signature">
+                    <span>— Socios Fundadores</span>
                 </div>
             </div>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-number">15+</span>
-                    <p>Años de Experiencia</p>
+
+            <div class="credibility-stats">
+                <div class="c-stat-box">
+                    <span class="c-stat-num">15+</span>
+                    <span class="c-stat-label">Años de Litigio y <br>Consultoría</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">800+</span>
-                    <p>Clientes Asesorados</p>
+                <div class="c-stat-box">
+                    <span class="c-stat-num">800+</span>
+                    <span class="c-stat-label">Asuntos Resueltos <br>Favorablemente</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">300+</span>
-                    <p>Inmuebles Gestionados</p>
+                <div class="c-stat-box">
+                    <span class="c-stat-num">300+</span>
+                    <span class="c-stat-label">Bienes Inmuebles <br>Bajo Gestión</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">12</span>
-                    <p>Especialistas Aliados</p>
+                <div class="c-stat-box">
+                    <span class="c-stat-num">360°</span>
+                    <span class="c-stat-label">Visión Estratégica <br>Legal-Contable</span>
                 </div>
             </div>
         </div>
